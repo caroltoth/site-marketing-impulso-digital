@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impulso Digital - Marketing Digital</title>
+    
+    <link rel="stylesheet" href="style.css">  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container">
+           <!-- logo e nome empresa -->
+            <div class="logo">
+                <a href="#">
+                    <img src="imagem/logo1.png" alt= "Logo Impulso Digital" class="logo-img"> 
+
+                    <div class="logo-text-wrapper">
+                        <span class="logo-text-top">Impulso</span>
+                        <span class="logo-text-bottom">Digital</span>
+                    </div>
+                </a>
+            </div>
+            
+            <!-- menu navegação -->
+            <nav class="nav-menu" id="nav-menu">
+                <ul>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#portfolio">Portfólio</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+            
+            <button class="btn-mobile" id="btn-mobile" aria-label="Abrir Menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- seção hero -->
+        <section id="hero" class="hero">
+            <div class="container">
+                <div class="hero-content" data-aos="fade-right" data-aos-duration="1000">
+                    <h1>Conectando sua marca <br> <span id="typed-text"></span></h1>
+                    <p>Ajudamos seu negócio a crescer com estratégias inovadoras e focadas em resultados.</p>
+                    <a href="#contato" class="btn-cta">Quero crescer agora!</a>
+                </div>
+                <div class="hero-image" data-aos="fade-left" data-aos-duration="1000">
+                     <img src="imagem/estatisticas.png" alt="Ilustração de marketing digital">
+                </div>
+            </div>
+        </section>
+        <!-- seção sobre -->
+        <section id="sobre" class="section">
+            <div class="container two-columns">
+                <div class="section-image" data-aos="fade-up">
+                    <img src="imagem/equipe.png" alt="Equipe da Impulso Digital">
+                </div>
+                <div class="section-text" data-aos="fade-up" data-aos-delay="200">
+                    <h2>Sobre a nossa agência:</h2>
+                    <p>Somos a Impulso Digital, uma equipe de especialistas apaixonados por tecnologia e comunicação. Nascemos com o objetivo de conectar marcas e pessoas de forma autêntica.</p>
+                    <p>Com anos de experiência, combinamos dados e criatividade para entregar soluções que não apenas atendem, mas superam as expectativas.</p>
+                </div>
+            </div>
+        </section>
+        <!-- seção serviços -->
+        <section id="servicos" class="section bg-light">
+            <div class="container">
+                <h2 class="section-title" data-aos="fade-up">O Que Fazemos</h2>
+                <div class="service-grid">
+                    <article class="service-card" data-aos="fade-up" data-aos-delay="100">
+                        <i class="fas fa-bullhorn icon"></i>
+                        <h3>Mídias Sociais</h3>
+                        <p>Gerenciamento completo e campanhas criativas que engajam seu público-alvo.</p>
+                    </article>
+                    <article class="service-card" data-aos="fade-up" data-aos-delay="200">
+                        <i class="fas fa-chart-line icon"></i>
+                        <h3>SEO Estratégico</h3>
+                        <p>Colocamos seu site no topo do Google para que clientes encontrem você.</p>
+                    </article>
+                    <article class="service-card" data-aos="fade-up" data-aos-delay="300">
+                        <i class="fas fa-palette icon"></i>
+                        <h3>Design & Branding</h3>
+                        <p>Criamos identidades visuais fortes que contam a sua história e geram valor.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <!-- seção portfólio -->
+        <section id="portfolio" class="section">
+            <div class="container">
+                <h2 class="section-title" data-aos="fade-up">Nossos Projetos</h2>
+                <div class="portfolio-grid">
+                    
+                    <article class="portfolio-item" data-aos="zoom-in" data-aos-delay="100" data-project="aura-cafe">
+                        <img src="imagem/projeto-aura-cafe.png" alt="Projeto Aura Café">
+                        <div class="portfolio-info">
+                            <h3>Aura Café</h3>
+                            <p>E-commerce & Performance</p>
+                        </div>
+                    </article>
+        
+                    <article class="portfolio-item" data-aos="zoom-in" data-aos-delay="300" data-project="clinica-vivere">
+                        <img src="imagem/projeto-clinica.png" alt="Projeto Clínica Vivere">
+                        <div class="portfolio-info">
+                            <h3>Clínica Vivere</h3>
+                            <p>Negócio Local & Redes Sociais</p>
+                        </div>
+                    </article>
+
+                    <article class="portfolio-item" data-aos="zoom-in" data-aos-delay="300" data-project="proxima-fase">
+                        <img src="imagem/proximafase.png" alt="Próxima Fase Consultoria">
+                        <div class="portfolio-info">
+                            <h3>Próxima Fase Consultoria</h3>
+                            <p>B2B & Inbound Marketing</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <!-- seção depoimentos -->
+        <section id="depoimentos" class="section bg-light">
+            <div class="container">
+                <h2 class="section-title" data-aos="fade-up">O que os nossos clientes dizem:</h2>
+                <div class="testimonial-grid" data-aos="fade-up">
+                    <blockquote class="testimonial-card">
+                        <p>"A Impulso Digital transformou nossa presença online. Resultados incríveis!"</p>
+                        <footer>- Maria S., CEO da Clínica Vivere</footer>
+                    </blockquote>
+                    <blockquote class="testimonial-card">
+                        <p>"Profissionalismo e criatividade definem a equipe. Recomendo fortemente."</p>
+                        <footer>- João L., Diretor da Aura Café</footer>
+                    </blockquote>
+                    <blockquote class="testimonial-card">
+                        <p>"Finalmente encontramos um parceiro que entende nossas necessidades."</p>
+                        <footer>- Ana C., Gerente de Varejo</footer>
+                    </blockquote>
+                </div>
+            </div>
+        </section>
+        <!-- seção contato -->
+        <section id="contato" class="section">
+            <div class="container">
+                <h2 class="section-title" data-aos="fade-up">Vamos conversar?</h2>
+                <form class="contact-form" data-aos="fade-up">
+                    <div class="form-group">
+                        <label for="nome">Nome</label>
+                        <input type="text" id="nome" name="nome" placeholder="Seu nome completo">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" name="email" placeholder="seu.email@exemplo.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="telefone">Telefone</label>
+                        <input type="tel" id="telefone" name="telefone" placeholder="(XX) 99999-8888">
+                    </div>
+                    <div class="form-group">
+                        <label for="mensagem">Mensagem</label>
+                        <textarea id="mensagem" name="mensagem" rows="5" placeholder="Como podemos ajudar?"></textarea>
+                    </div>
+                    <button type="submit" class="btn-cta">Enviar</button>
+                </form>
+            </div>
+        </section>
+
+    </main>
+    <!-- rodape e redes sociais -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-contact">
+                <p><i class="fas fa-envelope"></i> contato@impulsodigital.com</p>
+                <p><i class="fas fa-phone"></i> (xx) xxxxx-xxxx</p>
+            </div>
+            <div class="footer-social">
+                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+            </div>
+            <div class="footer-copyright">
+                <p>&copy; 2025 Impulso Digital. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <a href="#" id="btn-top" aria-label="Voltar ao topo">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+     <!-- conteudo pop-up cafe -->
+    <div id="modal-aura-cafe" class="project-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Projeto: Aura Café</h2>
+            <p class="modal-subtitle">E-commerce & Performance</p>
+    
+            <h3>O desafio</h3>
+            <p>O Aura Café tinha um produto excelente, mas seu e-commerce era lento, confuso e tinha uma alta taxa de abandono de carrinho. As vendas dependiam quase 100% do Instagram.</p>
+    
+            <h3>A solução</h3>
+            <ul>
+                <li>Redesign UX/UI: Reconstruímos o e-commerce com foco total na jornada do usuário e otimização para mobile, simplificando o checkout.</li>
+                <li>Tráfego Pago (Performance): Lançamos campanhas estratégicas no Google Shopping e Meta Ads (Instagram/Facebook) focadas em conversão.</li>
+                <li>SEO: Otimizamos todas as páginas de produto e criamos conteúdo de blog para ranquear para termos de "café especial".</li>
+            </ul>
+    
+            <h3>Os resultados</h3>
+
+        <div class="results-grid">
+            <div class="result-item">
+                <i class="fas fa-search"></i>
+                    <p>Nº 3</p>
+                    <span>Top 3 no Google para "melhor café especial em grãos"</span>
+            </div>
+          
+            <div class="result-item">
+                <i class="fas fa-chart-line"></i>
+                    <p>+120%</p>
+                    <span>Aumento na Receita Online</span>
+            </div>
+
+            <div class="result-item">
+                <i class="fas fa-percentage"></i>
+                    <p>+78%</p>
+                    <span>Taxa de Conversão do Site</span>
+            </div>
+              
+        </div>
+      </div>
+    </div>
+    <!-- conteudo pop-up clinica -->
+     <div id="modal-clinica-vivere" class="project-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Projeto: Clínica Vivere</h2>
+            <p class="modal-subtitle">Negócio Local & Redes Sociais</p>
+
+            <h3>O desafio</h3>
+            <p>A clínica tinha dificuldade em traduzir sua presença no Instagram em agendamentos reais. A concorrência local era alta e eles não se destacavam.</p>
+
+            <h3>A solução</h3>
+            <ul>
+                <li>Gestão de redes sociais:Reformulamos a linha editorial do Instagram, focando em "provas sociais", reels educativos e bastidores que humanizaram a marca.</li>
+                <li>Tráfego Local: Criamos campanhas no Meta Ads (Instagram) com segmentação geográfica precisa (raio de 10km) e funil direto para o WhatsApp Business.</li>
+                <li>SEO Local: Otimização completa do perfil no Google Business.</li>
+            </ul>
+    
+            <h3>Os resultados</h3>
+
+        <div class="results-grid">
+              <div class="result-item">
+                <i class="fas fa-search"></i>
+                <p>Nº 2</p>
+                <span>No Google Maps para "harmonização facial em São Paulo"</span>
+              </div>
+
+                <div class="result-item">
+                    <i class="fab fa-instagram"></i>
+                    <p>+250%</p>
+                    <span>Aumento em agendamentos via Instagram</span>
+                </div>
+
+            <div class="result-item">
+                <i class="fas fa-calendar-check"></i>
+                <p>+90%</p>
+                <span>Ocupação da Agenda </span>
+            </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- conteudo pop-up consultoria-->
+     <div id="modal-proxima-fase" class="project-modal">
+        <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <h2>Projeto: Próxima Fase Consultoria</h2>
+        <p class="modal-subtitle">B2B & Inbound Marketing</p>
+        <h3>O desafio</h3>
+        <p>A "Próxima Fase" é uma consultoria de gestão de alto nível, mas sua presença online era fraca. Eles dependiam 100% de indicações e não conseguiam atrair leads qualificados de forma digital.</p>
+
+        <h3>A solução</h3>
+        <ul>
+            <li>Inbound Marketing: Criamos um blog de autoridade e "Materiais Ricos", como e-books e webinars, focados nas dores dos gestores para capturar leads.</li>
+            <li>SEO B2B: Otimizamos o site para termos de busca de "cauda longa" (ex: "como otimizar gestão de equipes remotas").</li>
+            <li>LinkedIn Ads:Lançamos campanhas ultra-segmentadas no LinkedIn Ads, focadas em Diretores e Gerentes de RH, promovendo os e-books e agendamentos.</li>
+        </ul>
+
+        <h3>Os resultados</h3>
+        
+        <div class="results-grid">
+           <div class="result-item">
+                <i class="fas fa-search"></i>
+                <p>Nº 5</p>
+                <span>No Google para "consultoria B2B"</span>
+            </div>
+        
+                <div class="result-item">
+                <i class="fas fa-users"></i>
+                <p>+180%</p>
+                <span>Leads Qualificados (MQLs)</span>
+            </div>
+
+            <div class="result-item">
+                <i class="fas fa-chart-pie"></i>
+                <p>+40%</p>
+                <span>Taxa de Conversão (Lead)</span>
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>  
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
