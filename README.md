@@ -55,12 +55,12 @@ Este projeto foi construído com as seguintes ferramentas:
 Este é um projeto estático, não sendo necessário nenhum build ou instalação de pacotes.
 
 1.  Clone o repositório:
-    ```bash
-    git clone [https://github.com/SEU-USUARIO/NOME-DO-REPOSITORIO.git](https://github.com/SEU-USUARIO/NOME-DO-REPOSITORIO.git)
+   ```bash
+    git clone [https://github.com/caroltoth/site-marketing-impulso-digital.git](https://github.com/caroltoth/site-marketing-impulso-digital.git)
     ```
 2.  Navegue até a pasta do projeto:
     ```bash
-    cd NOME-DO-REPOSITORIO
+    cd site-marketing-impulso-digital
     ```
 3.  Abra o arquivo `index.html` no seu navegador de preferência.
 
