@@ -1,7 +1,7 @@
 # 🚀 Impulso Digital - Landing Page
 
-> Este é o projeto de uma landing page responsiva para a "Impulso Digital", uma agência de marketing digital fictícia. O site foi construído com HTML, CSS puro e JavaScript, e inclui diversas animações e funcionalidades interativas.
-
+> Este projeto é um site-conceito para a "Impulso Digital", uma agência de marketing 100% fictícia. Todo o universo do site, incluindo as marcas do portfólio (como Aura Café e Clínica Vivere) e as imagens de apoio, foi criado com todas as imagens geradas pela IA Gemini.
+> O site foi construído com HTML, CSS puro e JavaScript, e inclui diversas animações e funcionalidades interativas.
 ---
 
 ### 📋 Índice
