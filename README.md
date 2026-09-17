@@ -15,7 +15,7 @@ Portfólio Interativo (Modais); Galeria de projetos onde cada item abre um pop-u
 Botão "Voltar ao Topo"; Componente que aparece dinamicamente e realiza um scroll suave até o início da página.
 
 **Tecnologias Utilizadas:**
-Desenvolvimento Base (por Caroline Toth):
+Desenvolvimento Base:
 HTML5 (Semântico)
 CSS3 (Variáveis, Flexbox, CSS Grid e Keyframes)
 JavaScript (ES6+) (Manipulação de DOM e lógica de modais)
