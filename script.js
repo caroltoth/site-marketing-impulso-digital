@@ -1,19 +1,15 @@
 "use strict";
 
 document.addEventListener('DOMContentLoaded', function() {
-
-    // menu hamburguer
     
     const btnMobile = document.getElementById('btn-mobile');
     const navMenu = document.getElementById('nav-menu');
 
     function toggleMenu(event) {
         if (event.type === 'touchstart') event.preventDefault();
-        // previne toque duplo em touchscreen
 
         navMenu.classList.toggle('active');
         const iconeBotao = btnMobile.querySelector('i');
-        // atualiza o icone e o leitor de tela
         const menuAtivo = navMenu.classList.contains('active');
 
         if (menuAtivo) {
@@ -32,7 +28,6 @@ document.addEventListener('DOMContentLoaded', function() {
         btnMobile.addEventListener('touchstart', toggleMenu);
     }
 
-    // fechar menu ao clicar em um link
     
     if (navMenu) {
         const navLinks = navMenu.querySelectorAll('a');
@@ -46,7 +41,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // inicialização do AOS (Animate on Scroll)
     
     if (typeof AOS !== 'undefined') {
         AOS.init({
@@ -56,7 +50,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // inicialização da biblioteca Typed.js (efeito de digitação)
     
     if (typeof Typed !== 'undefined' && document.getElementById('typed-text')) {
         var typed = new Typed('#typed-text', {
@@ -72,7 +65,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // botao voltar ao topo
     
     const btnTop = document.getElementById('btn-top');
 
@@ -98,47 +90,41 @@ document.addEventListener('DOMContentLoaded', function() {
         btnTop.addEventListener('click', scrollToTop);
     }
 
-    // pop-up de projetos
     
     const portfolioItems = document.querySelectorAll('.portfolio-item[data-project]');
     const projectModals = document.querySelectorAll('.project-modal');
     const closeModalButtons = document.querySelectorAll('.close-modal');
 
-    // Abre 
     portfolioItems.forEach(item => {
         item.addEventListener('click', () => {
             const projectId = item.dataset.project;
             const targetModal = document.getElementById(`modal-${projectId}`);
             if (targetModal) {
                 targetModal.classList.add('open');
-                document.body.style.overflow = 'hidden'; // Impede scroll da página
+                document.body.style.overflow = 'hidden';
             }
         });
     });
 
-    // Função genérica para fechar QUALQUER um aberto
     function closeAllModals() {
         projectModals.forEach(modal => {
             modal.classList.remove('open');
         });
-        document.body.style.overflow = ''; // Restaura scroll
+        document.body.style.overflow = ''; 
     }
 
-    // Fecha pelo botão X
     closeModalButtons.forEach(button => {
         button.addEventListener('click', closeAllModals);
     });
 
-    // Fecha clicando fora dele
     projectModals.forEach(modal => {
         modal.addEventListener('click', (event) => {
-            if (event.target === modal) { // Se o clique foi no fundo escuro
+            if (event.target === modal) {
                 closeAllModals();
             }
         });
     });
 
-    // Fecha o modal com a tecla ESC
     document.addEventListener('keydown', (event) => {
         if (event.key === 'Escape') {
             closeAllModals();
