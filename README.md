@@ -1,69 +1,33 @@
-# 🚀 Impulso Digital - Landing Page
+**Impulso Digital - Landing Page**
+Um projeto de página única (single-page) desenvolvido para a "Impulso Digital", uma agência de marketing fictícia. O foco deste trabalho é demonstrar a construção de uma interface moderna e responsiva utilizando puramente HTML, CSS e JavaScript, sem a necessidade de frameworks pesados.
 
-> Este projeto é um site-conceito para a "Impulso Digital", uma agência de marketing 100% fictícia. Todo o universo do site, incluindo as marcas do portfólio (como Aura Café e Clínica Vivere) e as imagens de apoio, foi criado com todas as imagens geradas pela IA Gemini.
-> O site foi construído com HTML, CSS puro e JavaScript, e inclui diversas animações e funcionalidades interativas.
----
+>**Nota sobre o design:** Todo o universo visual do site, incluindo as identidades visuais das empresas do portfólio (como Aura Café e Clínica Vivere) e as fotos de apoio, foi gerado utilizando a Inteligência Artificial Gemini.
 
-### 📋 Índice
+**O Projeto**
+O site funciona como a vitrine da agência, apresentando serviços, estatísticas, equipe e um portfólio interativo. O desenvolvimento focou em boas práticas de estruturação e em uma experiência de usuário (UX) fluida através de animações de scroll e componentes modais.
 
-* [Sobre o Projeto](#-sobre-o-projeto)
-* [Funcionalidades](#-funcionalidades)
-* [Tecnologias Utilizadas](#-tecnologias-utilizadas)
-* [Como Executar](#-como-executar)
+**Funcionalidades:**
+Design 100% Responsivo; A interface se adapta perfeitamente a celulares, tablets e desktops.
+Navegação Mobile; Menu hambúrguer interativo controlado via JavaScript.
+Animações Dinâmicas; Efeitos de fade e zoom sincronizados com a rolagem da página (Scroll Animations).
+Efeito de Digitação; O título principal simula uma máquina de escrever para maior dinamismo na primeira dobra (Hero Section).
+Portfólio Interativo (Modais); Galeria de projetos onde cada item abre um pop-up detalhado. Os modais suportam fechamento por clique no 'X', clique fora da caixa ou tecla 'ESC'.
+Botão "Voltar ao Topo"; Componente que aparece dinamicamente e realiza um scroll suave até o início da página.
 
----
+**Tecnologias Utilizadas:**
+Desenvolvimento Base (por Caroline Toth):
+HTML5 (Semântico)
+CSS3 (Variáveis, Flexbox, CSS Grid e Keyframes)
+JavaScript (ES6+) (Manipulação de DOM e lógica de modais)
 
-### 📖 Sobre o Projeto
+Bibliotecas e Recursos:
+AOS.js (Animate on Scroll)
+Typed.js (Efeito de digitação)
+Font Awesome (Ícones vetoriais)
+Google Fonts (Fonte Poppins)
 
-Este projeto é um site de página única (single-page) que serve como a "vitrine" de uma agência de marketing. O design é moderno e focado na experiência do usuário.
-
-Ele foi desenvolvido para demonstrar habilidades em **HTML5** semântico, **CSS3** avançado (com variáveis, Flexbox, Grid e animações) e manipulação do DOM com **JavaScript** puro.
-
----
-
-### ✨ Funcionalidades
-
-* **Design Responsivo:** Totalmente adaptável para desktops, tablets e celulares.
-* **Menu Hambúrguer:** Menu de navegação funcional para dispositivos móveis, criado com JavaScript.
-* **Animações de Scroll:** Efeitos de "fade" e "zoom" ao rolar a página, implementados com a biblioteca `AOS.js`.
-* **Efeito "Typed":** Efeito de máquina de escrever no título principal da seção hero, usando `Typed.js`.
-* **Portfólio Interativo:** Seção de portfólio com pop-ups (modais) que exibem detalhes de cada projeto (Aura Café, Clínica Vivere, etc.).
-* **Modal Funcional:** Os modais do portfólio podem ser fechados clicando no 'X', fora do conteúdo ou pressionando a tecla 'ESC'.
-* **CSS Moderno:** Uso de variáveis CSS para um tema de cores fácil de manter, Flexbox e Grid para layouts complexos.
-* **Botão "Voltar ao Topo":** Botão que aparece dinamicamente e leva o usuário de volta ao topo da página com scroll suave.
-
----
-
-### 🛠️ Tecnologias Utilizadas
-
-Este projeto foi construído com as seguintes ferramentas:
-
-* **HTML5**
-* **CSS3** (Variáveis, Flexbox, Grid, Keyframes)
-* **JavaScript (ES6+)**
-
-**Bibliotecas Externas:**
-* [AOS.js](https://github.com/michalsnik/aos) (Animate on Scroll)
-* [Typed.js](https://github.com/mattboldt/typed.js) (Efeito de digitação)
-* [Font Awesome](https://fontawesome.com/) (Ícones)
-* [Google Fonts](https://fonts.google.com/) (Fonte "Poppins")
-
----
-
-### 🏃 Como Executar
-
-Este é um projeto estático, não sendo necessário nenhum build ou instalação de pacotes.
-
-1.  Clone o repositório:
-   ```bash
-    git clone [https://github.com/caroltoth/site-marketing-impulso-digital.git](https://github.com/caroltoth/site-marketing-impulso-digital.git)
-    ```
-2.  Navegue até a pasta do projeto:
-    ```bash
-    cd site-marketing-impulso-digital
-    ```
-3.  Abra o arquivo `index.html` no seu navegador de preferência.
-
-> **Dica:** Para uma melhor experiência de desenvolvimento, você pode usar a extensão **"Live Server"** no Visual Studio Code, que recarrega a página automaticamente a cada alteração no código.
-
----
+**Como rodar o projeto localmente:**
+Por ser um projeto puramente estático, não há necessidade de builds complexos ou instalação de dependências.
+1. Baixe ou clone este repositório para o seu computador.
+2. Abra a pasta do projeto.
+3. Dê um clique duplo no arquivo index.html para abri-lo direto no seu navegador.
