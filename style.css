@@ -1,4 +1,4 @@
-/* variaveis e globais */
+
 :root {
     --cor-primaria: #0a3d62;   
     --cor-secundaria: #ff6347; 
@@ -7,9 +7,9 @@
     --cor-texto: #333;
     --cor-branca: #ffffff;
     --largura-container: 1100px;
-    --font-padrao: 'Poppins', sans-serif; /* Fonte profissional */
+    --font-padrao: 'Poppins', sans-serif;
 }
- /* reset universal e 'box-sizing' padrão */
+
 * {
     margin: 0;
     padding: 0;
@@ -20,7 +20,6 @@ html {
     scroll-behavior: smooth;
 }
 
-/*fonte padrao */
 body {
     font-family: var(--font-padrao);
     color: var(--cor-texto);
@@ -28,7 +27,6 @@ body {
     font-weight: 400;
 }
 
-/*fonte títulos */
 h1, h2, h3, h4, h5, h6, .logo a {
     font-weight: 700;
 }
@@ -48,7 +46,6 @@ ul {
     list-style-type: none;
 }
 
-/* reutilizaveis */
 .container {
     max-width: var(--largura-container);
     margin: 0 auto;
@@ -79,7 +76,6 @@ ul {
     flex: 1;
 }
 
-/* botão principal */
 .btn-cta {
     display: inline-block;
     background-color: var(--cor-secundaria);
@@ -97,22 +93,21 @@ ul {
     box-shadow: 0 5px 15px rgba(255, 99, 71, 0.4);
 }
 
-/* cabeçalho */
 .header {
     background-color: var(--cor-branca);
     padding: 20px 0;
     border-bottom: 1px solid #eee;
-    position: sticky; /* menu se mantem no topo ao rolar */
+    position: sticky;
     top: 0;
-    z-index: 100; /* ...e na frente de outros elementos */
+    z-index: 100;
 }
-/* alinha a logo e o menu */
+
 .header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-/*LOGO*/
+
 .logo a {
     color: var(--cor-primaria);
     display: flex; 
@@ -129,13 +124,13 @@ ul {
     flex-direction: column; 
     line-height: 1.1; 
 }
-/*"Impulso"*/
+
 .logo-text-top {
     font-size: 1.25rem; 
     font-weight: 700; 
     color: var(--cor-primaria); 
 }
-/*"Digital"*/
+
 .logo-text-bottom {
     font-size: 1.1rem; 
     font-weight: 400; 
@@ -153,7 +148,7 @@ ul {
     padding-bottom: 5px;
     position: relative;
 }
-/* efeito de sublinhado */
+
 .nav-menu a::after {
     content: '';
     position: absolute;
@@ -168,7 +163,7 @@ ul {
 .nav-menu a:hover::after {
     width: 100%;
 }
-/* esconde menu hamburguer no desktop*/
+
 .btn-mobile {
     display: none;
     font-size: 1.5rem;
@@ -178,7 +173,7 @@ ul {
     cursor: pointer;
 }
 
-/* seção hero */
+
 .hero {
     background: linear-gradient(110deg, #f9f9f9, var(--cor-fundo-claro));
     padding: 60px 0;
@@ -206,7 +201,7 @@ ul {
     min-height: 150px; 
 }
 
-/* Cursor da máquina de escrever */
+
 .hero-content h1 .typed-cursor {
     color: var(--cor-primaria);
     font-weight: normal;
@@ -225,7 +220,7 @@ ul {
     border-radius: 10px;
 }
 
-/* seção sobre */
+
 .section-text h2 {
     font-size: 2.2rem;
     color: var(--cor-primaria);
@@ -236,16 +231,16 @@ ul {
 }
 
 .section-image {
-    position: relative; /* Necessário para o "blob" */
+    position: relative; 
 }
 
 .section-image img {
     border-radius: 10px;
-    position: relative; /* Para ficar na frente do blob */
+    position: relative; 
     z-index: 2;
 }
 
-/* Efeito "Blob" atrás da imagem */
+
 .section-image::before {
     content: '';
     position: absolute;
@@ -261,7 +256,7 @@ ul {
     animation: blob-morph 10s ease-in-out infinite;
 }
 
-/* Animação que muda a forma da bolha */
+
 @keyframes blob-morph {
     0% {
         border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
@@ -276,7 +271,7 @@ ul {
 }
 
 
-/* seção serviços */
+
 .service-grid {
     display: flex;
     justify-content: space-between;
@@ -310,14 +305,14 @@ ul {
     margin-bottom: 15px;
 }
 
-/* seção portfólio */
+
 .portfolio-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr); 
-    gap: 25px; /* Aumentei um pouco o gap */
+    gap: 25px;
 }
 
-/* seção depoimentos */
+
 .testimonial-grid {
     display: flex;
     gap: 30px;
@@ -342,7 +337,7 @@ ul {
     color: var(--cor-primaria);
 }
 
-/* seção contato */
+
 .contact-form {
     max-width: 600px;
     margin: 0 auto;
@@ -383,7 +378,7 @@ ul {
     font-size: 1.1rem;
 }
 
-/* rodapé */
+
 .footer {
     background-color: var(--cor-primaria);
     color: var(--cor-branca);
@@ -422,9 +417,7 @@ ul {
     opacity: 0.8;
 }
 
-/* responsividade */
 
-/* tablet */
 @media (max-width: 768px) {
     .section {
         padding: 60px 0;
@@ -433,11 +426,11 @@ ul {
     .section-title {
         font-size: 2rem;
     }
-    /* menu hamburguer */
+    
     .btn-mobile {
         display: block;
     }
-    /* esconde menu desktop */
+   
     .nav-menu {
         display: none;
         position: absolute;
@@ -447,11 +440,11 @@ ul {
         background-color: var(--cor-branca);
         border-bottom: 1px solid #eee;
     }
-    /* js ativa o menu */
+    
     .nav-menu.active { 
         display: block;
     }
-    /* empilha links menu */
+    
     .nav-menu ul {
         flex-direction: column;
         gap: 0;
@@ -468,7 +461,7 @@ ul {
     .nav-menu a:hover::after {
         width: 0;
     }
-    /* empilha colunas */
+    
     .hero .container,
     .two-columns {
         flex-direction: column;
@@ -479,7 +472,7 @@ ul {
         min-height: auto;
         padding-top: 40px;
     }
-    /* reordena os itens */
+    
     .hero-content {
         order: 2; 
     }
@@ -491,33 +484,33 @@ ul {
         font-size: 2.5rem;
         min-height: 120px;
     }
-    /* empilha os cards de serviços e depoimentos */
+    
     .service-grid,
     .testimonial-grid {
         flex-direction: column;
     }
-    /* modifica a grid do portfólio */
+    
     .portfolio-grid {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
 
-/* mobile */
+
 @media (max-width: 480px) {
     .hero-content h1 {
         font-size: 2rem;
         min-height: 100px;
     }
-/* modifica a grid do portfólio */
+
     .portfolio-grid {
         grid-template-columns: 1fr;
     }
 }
 
-/* estilos adicionais */
 
-/* botão voltar ao topo */
+
+
 #btn-top {
     position: fixed;
     bottom: 20px;
@@ -546,7 +539,7 @@ ul {
     visibility: visible;
 }
 
-/* estilo portfólio */
+
 .portfolio-item {
     position: relative;
     overflow: hidden;
@@ -601,7 +594,7 @@ ul {
 }
 
 
-/* estilos do pop-up */
+
 .project-modal {
     display: none; 
     position: fixed;
@@ -696,7 +689,7 @@ ul {
     margin-bottom: 8px;
 }
 
-/* resultados */
+
 .results-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
@@ -733,7 +726,7 @@ ul {
     display: block;
 }
 
-/* responsividade para o pop-up */
+
 @media (max-width: 768px) {
     .modal-content {
         max-width: 95%;
@@ -746,6 +739,6 @@ ul {
         font-size: 1.4rem;
     }
     .results-grid {
-        grid-template-columns: 1fr; /* Empilha os resultados no mobile */
+        grid-template-columns: 1fr; 
     }
 }
